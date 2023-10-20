@@ -241,6 +241,7 @@ public class ItemInit {
 
     public static final RegistryObject<Item> JAKE_INGOT = ITEMS.register("jake_ingot",
             () -> new Item(new Item.Properties()));
+   
 
     public static final RegistryObject<ArmorItem> JAKE_HELMET = ITEMS.register("jake_helmet",
             () -> new ArmorItem(
@@ -307,7 +308,9 @@ public class ItemInit {
                     ArmorItem.Type.BOOTS,
                     new Item.Properties()));
 
-    //Evans items
+    
+
+        //Evans Items
     public static final RegistryObject<Item> EVAN_ESSENCE = ITEMS.register("evan_essence",
             () -> new Item(new Item.Properties()));
 
@@ -324,6 +327,10 @@ public class ItemInit {
             .effect(new MobEffectInstance(MobEffects.HERO_OF_THE_VILLAGE,150,1),100f)
             .alwaysEat()
             .build())));
+
+            
+    public static final RegistryObject<TridentItem> EVAN_PICK = ITEMS.register("evan_pick", ()
+    -> new TridentItem(new Item.Properties()));     
 
 
     public static final RegistryObject<ArmorItem> EVAN_HELMET = ITEMS.register("evan_helmet",
