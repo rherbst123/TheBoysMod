@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "theboysmod:carter_ingot"
+    },
+    {
+      "item": "theboysmod:riley_ingot"
+    },
+    {
+      "item": "theboysmod:austin_ingot"
+    },
+    {
+      "item": "theboysmod:bryan_ingot"
+    },
+    {
+      "item": "theboysmod:jacob_ingot"
+    },
+    {
+      "item": "theboysmod:jake_ingot"
+    },
+    {
+      "item": "theboysmod:john_ingot"
+    },
+    {
+      "item": "theboysmod:evan_ingot"
+    },
+    {
+      "item": "theboysmod:nick_ingot"
+    }
+  ],
+  "result": {
+    "item": "theboysmod:boys_block"
+  }
+}
