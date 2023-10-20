@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "theboysmod:evan_ingot"
+    }
+  },
+  "result": {
+    "item": "theboysmod:evan_block"
+  }
+}

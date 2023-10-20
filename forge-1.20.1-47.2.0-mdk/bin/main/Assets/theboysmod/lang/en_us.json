@@ -1,0 +1,103 @@
+{
+
+
+  "item.theboysmod.carter_essence": "Carter's Essence",
+  "item.theboysmod.riley_essence": "Riley's Essence",
+  "item.theboysmod.austin_essence": "Austin's Essence",
+  "item.theboysmod.bryan_essence": "Bryan's Essence",
+  "item.theboysmod.jacob_essence": "Jacob's Essence",
+  "item.theboysmod.jake_essence": "Jake's Essence",
+  "item.theboysmod.john_essence": "John's Essence",
+  "item.theboysmod.evan_essence": "Evan's Essence",
+  "item.theboysmod.nick_essence": "Nick's Essence",
+
+
+  "item.theboysmod.carter_ingot": "Carter's Ingot",
+  "item.theboysmod.riley_ingot": "Riley's Ingot",
+  "item.theboysmod.austin_ingot": "Austin's Ingot",
+  "item.theboysmod.bryan_ingot": "Bryan's Ingot",
+  "item.theboysmod.jacob_ingot": "Jacob's Ingot",
+  "item.theboysmod.jake_ingot": "Jake's Ingot",
+  "item.theboysmod.john_ingot": "John's Ingot",
+  "item.theboysmod.evan_ingot": "Evan's Ingot",
+  "item.theboysmod.nick_ingot": "Nick's Ingot",
+  "item.theboysmod.raw_boysore": "Raw Boys-Ore",
+  "item.theboysmod.boys_ingot": "Boys Ingot",
+
+  "item.theboysmod.carter_helmet": "Carter's Helmet",
+  "item.theboysmod.carter_chestplate": "Carter's Chestplate",
+  "item.theboysmod.carter_pants": "Carter's Pants",
+  "item.theboysmod.carter_boots": "Carter's Boots",
+
+  "item.theboysmod.riley_helmet": "Riley's Helmet",
+  "item.theboysmod.riley_chestplate": "Riley's Chestplate",
+  "item.theboysmod.riley_pants": "Riley's Pants",
+  "item.theboysmod.riley_boots": "Riley's Boots",
+
+  "item.theboysmod.bryan_helmet": "Bryan's Helmet",
+  "item.theboysmod.bryan_chestplate": "Bryan's Chestplate",
+  "item.theboysmod.bryan_pants": "Bryan's Pants",
+  "item.theboysmod.bryan_boots": "Bryan's Boots",
+
+  "item.theboysmod.austin_helmet": "Austin's Helmet",
+  "item.theboysmod.austin_chestplate": "Austin's Chestplate",
+  "item.theboysmod.austin_pants": "Austin's Pants",
+  "item.theboysmod.austin_boots": "Austin's Boots",
+
+  "item.theboysmod.jacob_helmet": "Jacob's Helmet",
+  "item.theboysmod.jacob_chestplate": "Jacob's Chestplate",
+  "item.theboysmod.jacob_pants": "Jacob's Pants",
+  "item.theboysmod.jacob_boots": "Jacob's Boots",
+
+  "item.theboysmod.jake_helmet": "Jake's Helmet",
+  "item.theboysmod.jake_chestplate": "Jake's Chestplate",
+  "item.theboysmod.jake_pants": "Jake's Pants",
+  "item.theboysmod.jake_boots": "Jake's Boots",
+
+  "item.theboysmod.john_helmet": "John's Helmet",
+  "item.theboysmod.john_chestplate": "John's Chestplate",
+  "item.theboysmod.john_pants": "John's Pants",
+  "item.theboysmod.john_boots": "John's Boots",
+
+  "item.theboysmod.evan_helmet": "Evan's Helmet",
+  "item.theboysmod.evan_chestplate": "Evan's Chestplate",
+  "item.theboysmod.evan_pants": "Evan's Pants",
+  "item.theboysmod.evan_boots": "Evan's Boots",
+
+  "item.theboysmod.nick_helmet": "Nick's Helmet",
+  "item.theboysmod.nick_chestplate": "Nick's Chestplate",
+  "item.theboysmod.nick_pants": "Nick's Pants",
+  "item.theboysmod.nick_boots": "Nick's Boots",
+
+
+
+
+
+  "item.theboysmod.body_pillow": "Jacob's Body Pillow",
+  "item.theboysmod.bryans_baton": "Bryan's Baton",
+  "item.theboysmod.ketamine": "Ketamine",
+  "item.theboysmod.hot_meat": "Hot Meat",
+  "item.theboysmod.nick_bottle": "Nick's Empty Bottle",
+  "item.theboysmod.zyn": "Zyn",
+  "item.theboysmod.the_nug": "The Nug",
+  "item.theboysmod.the_skin": "The Skin",
+  "item.theboysmod.evan_pick":"Evan's Pick",
+
+  "block.theboysmod.carter_block": "Carter's Block",
+  "block.theboysmod.riley_block": "Riley's Block",
+  "block.theboysmod.austin_block": "Austin's Block",
+  "block.theboysmod.bryan_block": "Bryan's Block",
+  "block.theboysmod.jacob_block": "Jacob's Block",
+  "block.theboysmod.jake_block": "Jake's Block",
+  "block.theboysmod.john_block": "John's Block",
+  "block.theboysmod.evan_block": "Evan's Block",
+  "block.theboysmod.nick_block": "Nick's Block",
+  "block.theboysmod.boys_block": "The Boys Block",
+  "block.theboysmod.boys_ore": "Boys Ore",
+
+
+  "itemGroup.the_boys_tab": "The Boys Mod"
+
+
+
+}
