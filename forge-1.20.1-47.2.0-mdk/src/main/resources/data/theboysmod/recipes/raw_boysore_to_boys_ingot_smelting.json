@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "theboysmod:raw_boysore"
+  },
+  "result": "theboysmod:boys_ingot",
+  "experience": 3,
+  "cookingtime": 200
+}

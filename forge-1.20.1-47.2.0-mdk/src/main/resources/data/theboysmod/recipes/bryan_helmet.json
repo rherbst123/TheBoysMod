@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "X X"
+  ],
+  "key": {
+    "X": {
+      "item": "theboysmod:bryan_ingot"
+    }
+  },
+  "result": {
+    "item": "theboysmod:bryan_helmet"
+  }
+}

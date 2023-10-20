@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "theboysmod:boys_ore",
+    "theboysmod:nether_boys_ore",
+    "theboysmod:deepslate_boys_ore",
+    "theboysmod:nether_boys_ore"
+  ]
+}
