@@ -1,8 +1,10 @@
 package dev.riley.theboysmod.Init;
 
 import dev.riley.theboysmod.TheBoysMod;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -14,7 +16,8 @@ public class BlockInit {
 
     //Boys Ore
     public static final RegistryObject<Block> BOYS_ORE = BLOCKS.register("boys_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE)));
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE),
+                    UniformInt.of(4,7)));
 
 
    //Blocks for the boys

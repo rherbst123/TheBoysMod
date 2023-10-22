@@ -76,6 +76,8 @@ public class ItemInit {
 
 
 
+
+
     public static final RegistryObject<Item> RILEY_ESSENCE = ITEMS.register("riley_essence",
             () -> new Item(new Item.Properties()));
 
@@ -330,7 +332,7 @@ public class ItemInit {
 
             
     public static final RegistryObject<TridentItem> EVAN_PICK = ITEMS.register("evan_pick", ()
-    -> new TridentItem(new Item.Properties()));     
+    -> new TridentItem(new Item.Properties()));
 
 
     public static final RegistryObject<ArmorItem> EVAN_HELMET = ITEMS.register("evan_helmet",

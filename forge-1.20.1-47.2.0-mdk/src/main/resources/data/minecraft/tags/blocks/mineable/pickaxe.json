@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "theboysmod:boys_ore",
+    "theboysmod:carter_block",
+    "theboysmod:riley_block",
+    "theboysmod:austin_block",
+    "theboysmod:bryan_block",
+    "theboysmod:jacob_block",
+    "theboysmod:jake_block",
+    "theboysmod:john_block",
+    "theboysmod:evan_block",
+    "theboysmod:nick_block"
+  ]
+}
