@@ -60,6 +60,9 @@ public class ItemInit {
                     ArmorItem.Type.BOOTS,
                     new Item.Properties()));
 
+    public static final RegistryObject<Item> CARTER_DISK = ITEMS.register("carter_disk",
+            () -> new RecordItem(8, SoundInit.CARTER_SONG, new Item.Properties(), 3200));
+
     //Riley's Items
     //Ketamine item
     //Properties in ModItems/KetamineItems
@@ -271,6 +274,9 @@ public class ItemInit {
                     ArmorMatInit.JAKE,
                     ArmorItem.Type.BOOTS,
                     new Item.Properties()));
+
+    public static final RegistryObject<thepenItem> THE_PEN = ITEMS.register("the_pen",
+    () -> new thepenItem(new Item.Properties().durability(5)));
 
 
 

@@ -1,0 +1,10 @@
+{
+  "music_box": {
+    "sounds":[
+      {
+        "name": "theboysmod:carter_song",
+        "stream": true
+      }
+    ]
+  }
+}

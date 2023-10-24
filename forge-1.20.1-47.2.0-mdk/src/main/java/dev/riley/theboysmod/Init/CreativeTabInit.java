@@ -52,6 +52,8 @@ public class CreativeTabInit {
                         output.accept(ItemInit.ZYN.get());
                         output.accept(ItemInit.THE_SKIN.get());
                         output.accept(ItemInit.EVAN_PICK.get());
+                        output.accept(ItemInit.CARTER_DISK.get());
+                        output.accept(ItemInit.THE_PEN.get());
 
                        //Ingots And Ore stuff
                         output.accept(ItemInit.CARTER_INGOT.get());
