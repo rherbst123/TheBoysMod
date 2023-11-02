@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "theboysmod:evan_block"
+    }
+  ],
+  "result": {
+    "item": "theboysmod:evan_ingot",
+    "count": 9
+  }
+}

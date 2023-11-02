@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "theboysmod:nick_block"
+    }
+  ],
+  "result": {
+    "item": "theboysmod:nick_ingot",
+    "count": 9
+  }
+}

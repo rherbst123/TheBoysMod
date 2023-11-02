@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "theboysmod:carter_block"
+    }
+  ],
+  "result": {
+    "item": "theboysmod:carter_ingot",
+    "count": 9
+  }
+}
