@@ -70,6 +70,7 @@ public class CreativeTabInit {
 
                         //blocks
                         output.accept(ItemInit.BOYS_ORE.get());
+                        output.accept(ItemInit.DEEPSLATE_BOYS_ORE.get());
                         output.accept(ItemInit.BOYS_BLOCK.get());
                         output.accept(ItemInit.CARTER_BLOCK.get());
                         output.accept(ItemInit.RILEY_BLOCK.get());

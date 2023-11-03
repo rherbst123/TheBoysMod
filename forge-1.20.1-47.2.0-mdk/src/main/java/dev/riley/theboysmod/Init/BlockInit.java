@@ -20,6 +20,11 @@ public class BlockInit {
                     UniformInt.of(4,7)));
 
 
+    public static final RegistryObject<Block> DEEPSLATE_BOYS_ORE = BLOCKS.register("deepslate_boys_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE),
+                    UniformInt.of(4,7)));
+
+
    //Blocks for the boys
     public static final RegistryObject<Block> BOYS_BLOCK = BLOCKS.register("boys_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK)));

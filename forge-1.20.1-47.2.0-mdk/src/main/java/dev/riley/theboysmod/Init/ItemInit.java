@@ -420,6 +420,11 @@ public class ItemInit {
             () -> new BlockItem(BlockInit.BOYS_ORE.get(),
                     new Item.Properties()));
 
+    public static final RegistryObject<BlockItem> DEEPSLATE_BOYS_ORE = ITEMS.register("deepslate_boys_ore",
+            () -> new BlockItem(BlockInit.DEEPSLATE_BOYS_ORE.get(),
+                    new Item.Properties()));
+
+
     public static final RegistryObject<BlockItem> BOYS_BLOCK = ITEMS.register("boys_block",
             () -> new BlockItem(BlockInit.BOYS_BLOCK.get(),
                     new Item.Properties()));

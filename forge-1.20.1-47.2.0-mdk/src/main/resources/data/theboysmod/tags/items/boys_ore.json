@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "theboysmod:boys_ore"
+    "theboysmod:boys_ore",
+    "theboysmod:deepslate_boys_ore"
    ]
 }
