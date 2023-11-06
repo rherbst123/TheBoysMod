@@ -35,27 +35,27 @@ public class ItemInit {
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<ArmorItem> CARTER_HELMET = ITEMS.register("carter_helmet",
-            () -> new ArmorItem(
+            () -> new carterArmorItem(
                     ArmorMatInit.CARTER,
                     ArmorItem.Type.HELMET,
                     new Item.Properties()));
 
     public static final RegistryObject<ArmorItem> CARTER_CHESTPLATE = ITEMS.register("carter_chestplate",
-            () -> new ArmorItem(
+            () -> new carterArmorItem(
                     ArmorMatInit.CARTER,
                     ArmorItem.Type.CHESTPLATE,
                     new Item.Properties()));
 
 
     public static final RegistryObject<ArmorItem> CARTER_PANTS = ITEMS.register("carter_pants",
-            () -> new ArmorItem(
+            () -> new carterArmorItem(
                     ArmorMatInit.CARTER,
                     ArmorItem.Type.LEGGINGS,
                     new Item.Properties()));
 
 
     public static final RegistryObject<ArmorItem> CARTER_BOOTS = ITEMS.register("carter_boots",
-            () -> new ArmorItem(
+            () -> new carterArmorItem(
                     ArmorMatInit.CARTER,
                     ArmorItem.Type.BOOTS,
                     new Item.Properties()));
