@@ -1,6 +1,7 @@
 package dev.riley.theboysmod.Init;
 
 import dev.riley.theboysmod.Init.moditems.*;
+import dev.riley.theboysmod.Init.moditems.armoritems.*;
 import dev.riley.theboysmod.TheBoysMod;
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.core.Registry;
@@ -88,26 +89,26 @@ public class ItemInit {
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<ArmorItem> RILEY_HELMET = ITEMS.register("riley_helmet",
-            () -> new ArmorItem(
+            () -> new rileyArmorItem(
                     ArmorMatInit.RILEY,
                     ArmorItem.Type.HELMET,
                     new Item.Properties()));
 
     public static final RegistryObject<ArmorItem> RILEY_CHESTPLATE = ITEMS.register("riley_chestplate",
-            () -> new ArmorItem(
+            () -> new rileyArmorItem(
                     ArmorMatInit.RILEY,
                     ArmorItem.Type.CHESTPLATE,
                     new Item.Properties()));
 
 
     public static final RegistryObject<ArmorItem> RILEY_PANTS = ITEMS.register("riley_pants",
-            () -> new ArmorItem(
+            () -> new rileyArmorItem(
                     ArmorMatInit.RILEY,
                     ArmorItem.Type.LEGGINGS,
                     new Item.Properties()));
 
     public static final RegistryObject<ArmorItem> RILEY_BOOTS = ITEMS.register("riley_boots",
-            () -> new ArmorItem(
+            () -> new rileyArmorItem(
                     ArmorMatInit.RILEY,
                     ArmorItem.Type.BOOTS,
                     new Item.Properties()));
@@ -131,27 +132,27 @@ public class ItemInit {
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<ArmorItem> AUSTIN_HELMET = ITEMS.register("austin_helmet",
-            () -> new ArmorItem(
+            () -> new austinArmorItem(
                     ArmorMatInit.AUSTIN,
                     ArmorItem.Type.HELMET,
                     new Item.Properties()));
 
     public static final RegistryObject<ArmorItem> AUSTIN_CHESTPLATE = ITEMS.register("austin_chestplate",
-            () -> new ArmorItem(
+            () -> new austinArmorItem(
                     ArmorMatInit.AUSTIN,
                     ArmorItem.Type.CHESTPLATE,
                     new Item.Properties()));
 
 
     public static final RegistryObject<ArmorItem> AUSTIN_PANTS = ITEMS.register("austin_pants",
-            () -> new ArmorItem(
+            () -> new austinArmorItem(
                     ArmorMatInit.AUSTIN,
                     ArmorItem.Type.LEGGINGS,
                     new Item.Properties()));
 
 
     public static final RegistryObject<ArmorItem> AUSTIN_BOOTS = ITEMS.register("austin_boots",
-            () -> new ArmorItem(
+            () -> new austinArmorItem(
                     ArmorMatInit.AUSTIN,
                     ArmorItem.Type.BOOTS,
                     new Item.Properties()));
@@ -170,26 +171,26 @@ public class ItemInit {
             () -> new SwordItem(Tiers.NETHERITE, 10,4.0f, new Item.Properties().rarity(Rarity.EPIC)));
 
     public static final RegistryObject<ArmorItem> BRYAN_HELMET = ITEMS.register("bryan_helmet",
-            () -> new ArmorItem(
+            () -> new bryanArmorItem(
                     ArmorMatInit.BRYAN,
                     ArmorItem.Type.HELMET,
                     new Item.Properties()));
 
     public static final RegistryObject<ArmorItem> BRYAN_CHESTPLATE = ITEMS.register("bryan_chestplate",
-            () -> new ArmorItem(
+            () -> new bryanArmorItem(
                     ArmorMatInit.BRYAN,
                     ArmorItem.Type.CHESTPLATE,
                     new Item.Properties()));
 
     public static final RegistryObject<ArmorItem> BRYAN_PANTS = ITEMS.register("bryan_pants",
-            () -> new ArmorItem(
+            () -> new bryanArmorItem(
                     ArmorMatInit.BRYAN,
                     ArmorItem.Type.LEGGINGS,
                     new Item.Properties()));
 
 
     public static final RegistryObject<ArmorItem> BRYAN_BOOTS = ITEMS.register("bryan_boots",
-            () -> new ArmorItem(
+            () -> new bryanArmorItem(
                     ArmorMatInit.BRYAN,
                     ArmorItem.Type.BOOTS,
                     new Item.Properties()));
@@ -213,27 +214,27 @@ public class ItemInit {
                     .build())));
 
     public static final RegistryObject<ArmorItem> JACOB_HELMET = ITEMS.register("jacob_helmet",
-            () -> new ArmorItem(
+            () -> new jacobArmorItem(
                     ArmorMatInit.JACOB,
                     ArmorItem.Type.HELMET,
                     new Item.Properties()));
 
 
     public static final RegistryObject<ArmorItem> JACOB_CHESTPLATE = ITEMS.register("jacob_chestplate",
-            () -> new ArmorItem(
+            () -> new jacobArmorItem(
                     ArmorMatInit.JACOB,
                     ArmorItem.Type.CHESTPLATE,
                     new Item.Properties()));
 
     public static final RegistryObject<ArmorItem> JACOB_PANTS = ITEMS.register("jacob_pants",
-            () -> new ArmorItem(
+            () -> new jacobArmorItem(
                     ArmorMatInit.JACOB,
                     ArmorItem.Type.LEGGINGS,
                     new Item.Properties()));
 
 
     public static final RegistryObject<ArmorItem> JACOB_BOOTS = ITEMS.register("jacob_boots",
-            () -> new ArmorItem(
+            () -> new jacobArmorItem(
                     ArmorMatInit.JACOB,
                     ArmorItem.Type.BOOTS,
                     new Item.Properties()));
@@ -249,28 +250,28 @@ public class ItemInit {
    
 
     public static final RegistryObject<ArmorItem> JAKE_HELMET = ITEMS.register("jake_helmet",
-            () -> new ArmorItem(
+            () -> new jakeArmorItem(
                     ArmorMatInit.JAKE,
                     ArmorItem.Type.HELMET,
                     new Item.Properties()));
 
 
     public static final RegistryObject<ArmorItem> JAKE_CHESTPLATE = ITEMS.register("jake_chestplate",
-            () -> new ArmorItem(
+            () -> new jakeArmorItem(
                     ArmorMatInit.JAKE,
                     ArmorItem.Type.CHESTPLATE,
                     new Item.Properties()));
 
 
     public static final RegistryObject<ArmorItem> JAKE_PANTS = ITEMS.register("jake_pants",
-            () -> new ArmorItem(
+            () -> new jakeArmorItem(
                     ArmorMatInit.JAKE,
                     ArmorItem.Type.LEGGINGS,
                     new Item.Properties()));
 
 
     public static final RegistryObject<ArmorItem> JAKE_BOOTS = ITEMS.register("jake_boots",
-            () -> new ArmorItem(
+            () -> new jakeArmorItem(
                     ArmorMatInit.JAKE,
                     ArmorItem.Type.BOOTS,
                     new Item.Properties()));
@@ -291,27 +292,27 @@ public class ItemInit {
             ()-> new Item(new Item.Properties()));
 
     public static final RegistryObject<ArmorItem> JOHN_HELMET = ITEMS.register("john_helmet",
-            () -> new ArmorItem(
+            () -> new johnArmorItem(
                     ArmorMatInit.JOHN,
                     ArmorItem.Type.HELMET,
                     new Item.Properties()));
 
 
     public static final RegistryObject<ArmorItem> JOHN_CHESTPLATE = ITEMS.register("john_chestplate",
-            () -> new ArmorItem(
+            () -> new johnArmorItem(
                     ArmorMatInit.JOHN,
                     ArmorItem.Type.CHESTPLATE,
                     new Item.Properties()));
 
     public static final RegistryObject<ArmorItem> JOHN_PANTS = ITEMS.register("john_pants",
-            () -> new ArmorItem(
+            () -> new johnArmorItem(
                     ArmorMatInit.JOHN,
                     ArmorItem.Type.LEGGINGS,
                     new Item.Properties()));
 
 
     public static final RegistryObject<ArmorItem> JOHN_BOOTS = ITEMS.register("john_boots",
-            () -> new ArmorItem(
+            () -> new johnArmorItem(
                     ArmorMatInit.JOHN,
                     ArmorItem.Type.BOOTS,
                     new Item.Properties()));
@@ -342,26 +343,26 @@ public class ItemInit {
 
 
     public static final RegistryObject<ArmorItem> EVAN_HELMET = ITEMS.register("evan_helmet",
-            () -> new ArmorItem(
+            () -> new evanArmorItem(
                     ArmorMatInit.EVAN,
                     ArmorItem.Type.HELMET,
                     new Item.Properties()));
 
 
     public static final RegistryObject<ArmorItem> EVAN_CHESTPLATE = ITEMS.register("evan_chestplate",
-            () -> new ArmorItem(
+            () -> new evanArmorItem(
                     ArmorMatInit.EVAN,
                     ArmorItem.Type.CHESTPLATE,
                     new Item.Properties()));
 
     public static final RegistryObject<ArmorItem> EVAN_PANTS = ITEMS.register("evan_pants",
-            () -> new ArmorItem(
+            () -> new evanArmorItem(
                     ArmorMatInit.EVAN,
                     ArmorItem.Type.LEGGINGS,
                     new Item.Properties()));
 
     public static final RegistryObject<ArmorItem> EVAN_BOOTS = ITEMS.register("evan_boots",
-            () -> new ArmorItem(
+            () -> new evanArmorItem(
                     ArmorMatInit.EVAN,
                     ArmorItem.Type.BOOTS,
                     new Item.Properties()));
@@ -377,25 +378,25 @@ public class ItemInit {
             () -> new nickbottleItem(new Item.Properties()));
 
     public static final RegistryObject<ArmorItem> NICK_HELMET = ITEMS.register("nick_helmet",
-            () -> new ArmorItem(
+            () -> new nickArmorItem(
                     ArmorMatInit.NICK,
                     ArmorItem.Type.HELMET,
                     new Item.Properties()));
 
     public static final RegistryObject<ArmorItem> NICK_CHESTPLATE = ITEMS.register("nick_chestplate",
-            () -> new ArmorItem(
+            () -> new nickArmorItem(
                     ArmorMatInit.NICK,
                     ArmorItem.Type.CHESTPLATE,
                     new Item.Properties()));
 
     public static final RegistryObject<ArmorItem> NICK_PANTS = ITEMS.register("nick_pants",
-            () -> new ArmorItem(
+            () -> new nickArmorItem(
                     ArmorMatInit.NICK,
                     ArmorItem.Type.LEGGINGS,
                     new Item.Properties()));
 
     public static final RegistryObject<ArmorItem> NICK_BOOTS = ITEMS.register("nick_boots",
-            () -> new ArmorItem(
+            () -> new nickArmorItem(
                     ArmorMatInit.NICK,
                     ArmorItem.Type.BOOTS,
                     new Item.Properties()));
