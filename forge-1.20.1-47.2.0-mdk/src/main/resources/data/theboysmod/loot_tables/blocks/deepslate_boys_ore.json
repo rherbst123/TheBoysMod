@@ -10,7 +10,7 @@
           "children": [
             {
               "type": "minecraft:item",
-              "name": "theboysmod:boys_ore",
+              "name": "theboysmod:deepslate_boys_ore",
               "conditions": [
                 {
                   "condition": "minecraft:match_tool",
@@ -45,5 +45,5 @@
         }
       ]
     }
- ]
+  ]
 }
