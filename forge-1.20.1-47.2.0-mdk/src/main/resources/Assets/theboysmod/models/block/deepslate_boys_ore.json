@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "theboysmod:block/boys_ore"
+    "all": "theboysmod:block/deepslate_boys_ore"
   }
 }
