@@ -168,7 +168,7 @@ public class ItemInit {
 
 
     public static final RegistryObject<Item> BRYANS_BATON = ITEMS.register("bryans_baton",
-            () -> new SwordItem(Tiers.NETHERITE, 10,4.0f, new Item.Properties().rarity(Rarity.EPIC)));
+            () -> new SwordItem(Tiers.NETHERITE, 5,5.0f, new Item.Properties().rarity(Rarity.EPIC)));
 
     public static final RegistryObject<ArmorItem> BRYAN_HELMET = ITEMS.register("bryan_helmet",
             () -> new bryanArmorItem(

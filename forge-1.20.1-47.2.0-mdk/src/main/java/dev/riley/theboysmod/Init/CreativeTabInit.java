@@ -9,6 +9,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.client.event.RegisterColorHandlersEvent;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -54,6 +55,7 @@ public class CreativeTabInit {
                         output.accept(ItemInit.EVAN_PICK.get());
                         output.accept(ItemInit.CARTER_DISK.get());
                         output.accept(ItemInit.THE_PEN.get());
+                        output.accept(ItemInit.BODY_PILLOW.get());
 
                        //Ingots And Ore stuff
                         output.accept(ItemInit.CARTER_INGOT.get());
