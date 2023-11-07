@@ -21,8 +21,8 @@ public class carterArmorItem extends ArmorItem {
     // This map holds the armor material and the corresponding mob effect instance
     private static final Map<ArmorMaterial, MobEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, MobEffectInstance>())
-                    .put(ArmorMatInit.CARTER, new MobEffectInstance(MobEffects.NIGHT_VISION,
-                            500,3,true,false,false)).build();
+                    .put(ArmorMatInit.CARTER, new MobEffectInstance(MobEffects.HEALTH_BOOST,
+                            500,1,true,false,false)).build();
 
     // Initializes the armor item with the specified material, type, and properties
     public carterArmorItem(ArmorMaterial material, Type type, Properties properties){

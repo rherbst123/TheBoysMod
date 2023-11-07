@@ -17,8 +17,8 @@ public class austinArmorItem extends ArmorItem {
 
     private static final Map<ArmorMaterial, MobEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, MobEffectInstance>())
-                    .put(ArmorMatInit.AUSTIN, new MobEffectInstance(MobEffects.MOVEMENT_SPEED,
-                            200,0,true,false,false)).build();
+                    .put(ArmorMatInit.AUSTIN, new MobEffectInstance(MobEffects.DAMAGE_BOOST,
+                            200,2,true,false,false)).build();
 
     public austinArmorItem(ArmorMaterial material, ArmorItem.Type type, Item.Properties properties){
         super(material, type, properties);

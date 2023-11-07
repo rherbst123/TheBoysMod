@@ -17,8 +17,8 @@ public class rileyArmorItem extends ArmorItem {
 
     private static final Map<ArmorMaterial, MobEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, MobEffectInstance>())
-                    .put(ArmorMatInit.RILEY, new MobEffectInstance(MobEffects.NIGHT_VISION,
-                            500,3,true,false,false)).build();
+                    .put(ArmorMatInit.RILEY, new MobEffectInstance(MobEffects.FIRE_RESISTANCE,
+                            500,1,true,false,false)).build();
 
     public rileyArmorItem(ArmorMaterial material, ArmorItem.Type type, Item.Properties properties){
         super(material,type,properties);

@@ -17,8 +17,8 @@ public class jakeArmorItem extends ArmorItem {
 
     private static final Map<ArmorMaterial, MobEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, MobEffectInstance>())
-                    .put(ArmorMatInit.JAKE, new MobEffectInstance(MobEffects.NIGHT_VISION,
-                            500,3,true,false,false)).build();
+                    .put(ArmorMatInit.JAKE, new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE,
+                            500,1,true,false,false)).build();
 
     public jakeArmorItem(ArmorMaterial material, ArmorItem.Type type, Item.Properties properties){
         super(material,type,properties);

@@ -18,7 +18,7 @@ public class johnArmorItem extends ArmorItem {
     private static final Map<ArmorMaterial, MobEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, MobEffectInstance>())
                     .put(ArmorMatInit.JOHN, new MobEffectInstance(MobEffects.NIGHT_VISION,
-                            250,3,true,false,false)).build();
+                            250,0,true,false,false)).build();
 
     public johnArmorItem(ArmorMaterial material, ArmorItem.Type type, Item.Properties properties){
         super(material,type,properties);

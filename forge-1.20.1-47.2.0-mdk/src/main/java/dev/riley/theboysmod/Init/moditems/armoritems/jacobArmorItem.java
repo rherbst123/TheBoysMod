@@ -18,7 +18,7 @@ public class jacobArmorItem extends ArmorItem {
     private static final Map<ArmorMaterial, MobEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, MobEffectInstance>())
                     .put(ArmorMatInit.JACOB, new MobEffectInstance(MobEffects.MOVEMENT_SPEED,
-                            500,0,true,false,false)).build();
+                            500,2,true,false,false)).build();
 
     public jacobArmorItem(ArmorMaterial material, ArmorItem.Type type, Item.Properties properties){
         super(material,type,properties);

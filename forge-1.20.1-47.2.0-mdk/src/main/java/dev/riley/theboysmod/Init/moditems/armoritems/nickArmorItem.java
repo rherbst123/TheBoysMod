@@ -17,8 +17,8 @@ public class nickArmorItem extends ArmorItem {
 
     private static final Map<ArmorMaterial, MobEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, MobEffectInstance>())
-                    .put(ArmorMatInit.NICK, new MobEffectInstance(MobEffects.NIGHT_VISION,
-                            500,3,true,false,false)).build();
+                    .put(ArmorMatInit.NICK, new MobEffectInstance(MobEffects.WATER_BREATHING,
+                            500,0,true,false,false)).build();
 
     public nickArmorItem(ArmorMaterial material, ArmorItem.Type type, Item.Properties properties){
         super(material,type,properties);
