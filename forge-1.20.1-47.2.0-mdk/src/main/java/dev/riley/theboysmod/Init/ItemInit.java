@@ -338,8 +338,8 @@ public class ItemInit {
             .build())));
 
             
-    public static final RegistryObject<TridentItem> EVAN_PICK = ITEMS.register("evan_pick", ()
-    -> new TridentItem(new Item.Properties()));
+    public static final RegistryObject<Item> EVAN_PICK = ITEMS.register("evan_pick", ()
+    -> new evanPickItem(new Item.Properties()));
 
 
     public static final RegistryObject<ArmorItem> EVAN_HELMET = ITEMS.register("evan_helmet",
