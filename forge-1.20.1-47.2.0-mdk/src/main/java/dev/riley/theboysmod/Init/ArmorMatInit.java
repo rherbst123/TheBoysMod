@@ -49,6 +49,8 @@ public class ArmorMatInit {
             0.5f
     );
 
+
+
     public static final boysArmorMats JACOB = new boysArmorMats(
             new int[]{500,1200,600,400},
             new int[]{11,16,15,13},

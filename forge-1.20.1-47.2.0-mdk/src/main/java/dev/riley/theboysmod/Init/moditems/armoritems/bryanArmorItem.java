@@ -17,8 +17,11 @@ public class bryanArmorItem extends ArmorItem{
 
     private static final Map<ArmorMaterial, MobEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, MobEffectInstance>())
-                    .put(ArmorMatInit.BRYAN, new MobEffectInstance(MobEffects.NIGHT_VISION,
-                            500,3,true,false,false)).build();
+                    .put(ArmorMatInit.BRYAN, new MobEffectInstance(MobEffects.SLOW_FALLING,
+                            500,2,true,false,false))
+                    .build();
+
+
 
     public bryanArmorItem(ArmorMaterial material, ArmorItem.Type type, Item.Properties properties){
         super(material,type,properties);
