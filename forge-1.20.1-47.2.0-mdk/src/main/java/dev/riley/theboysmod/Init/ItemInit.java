@@ -8,6 +8,8 @@ import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -60,6 +62,11 @@ public class ItemInit {
                     ArmorMatInit.CARTER,
                     ArmorItem.Type.BOOTS,
                     new Item.Properties()));
+
+    public static final RegistryObject<RecordItem> CARTER_SONG = ITEMS.register("carter_song",
+            () -> new RecordItem
+                    (1, SoundEvents.MUSIC_DISC_5,
+                            (new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON)),8000));
 
 
     //Riley's Items
@@ -468,7 +475,6 @@ public class ItemInit {
 
 
 }
-
 
 
 
