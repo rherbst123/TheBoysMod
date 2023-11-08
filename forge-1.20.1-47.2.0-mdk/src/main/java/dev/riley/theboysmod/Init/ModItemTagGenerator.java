@@ -4,6 +4,7 @@ import dev.riley.theboysmod.TheBoysMod;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
@@ -21,7 +22,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
     protected void addTags(HolderLookup.Provider p_256380_) {
 
         this.tag(ItemTags.MUSIC_DISCS)
-                .add(ModItems.BAR_BRAWL_MUSIC_DISC.get());
+                .add(ItemInit.CARTER_SONG_MUSIC_DISK.get());
 
     }
 }
