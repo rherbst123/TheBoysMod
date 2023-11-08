@@ -62,7 +62,7 @@ public class ItemInit {
                     new Item.Properties()));
 
     public static final RegistryObject<Item> CARTER_SONG_MUSIC_DISK = ITEMS.register("carter_song_music_disk",
-            () -> new RecordItem(8, SoundInit.CARTER_SONG, new Item.Properties().stacksTo(1), 3200));
+            () -> new RecordItem(1, SoundInit.CARTER_SONG, new Item.Properties().stacksTo(1), 8000));
 
     //Riley's Items
     //Ketamine item
