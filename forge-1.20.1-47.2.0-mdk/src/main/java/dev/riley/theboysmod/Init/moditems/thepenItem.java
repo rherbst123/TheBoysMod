@@ -26,32 +26,11 @@ import java.util.List;
 
 public class thepenItem extends Item {
 
-    private int durability = 5;
+
     public thepenItem(Properties properties) {
 
         super(properties);
     }
 
-//    @Override
-//    public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
-//        if (!level.isClientSide() && hand == InteractionHand.MAIN_HAND) {
-//
-//
-//                player.addEffect(new MobEffectInstance(MobEffects.HUNGER, 25,2));
-//                player.addEffect(new MobEffectInstance(MobEffects.SATURATION, 25,3));
-//                player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 25,6));
-//
-//                player.getCooldowns().addCooldown(this, 20);
-//
-//            if (player != null) {
-//                player.getItemInHand(InteractionHand.MAIN_HAND).hurtAndBreak(1, player, (p_41303_) -> {
-//                    p_41303_.broadcastBreakEvent(.getHand());
-//                });
-//            }
-//
-//        }
-//
-//        return super.use(level, player, hand);
-//    }
 
 }
