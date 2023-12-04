@@ -9,7 +9,7 @@ import java.util.List;
 
 public class bodyPillowItem extends SwordItem {
     public bodyPillowItem(Properties properties){
-        super(Tiers.IRON,13,0.9f, new Properties().rarity(Rarity.UNCOMMON));
+        super(Tiers.IRON,14,0.2f, new Properties().rarity(Rarity.UNCOMMON));
 
     }
 

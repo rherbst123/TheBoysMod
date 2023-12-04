@@ -173,7 +173,7 @@ public class ItemInit {
 
 
     public static final RegistryObject<Item> BRYANS_BATON = ITEMS.register("bryans_baton",
-            () -> new SwordItem(Tiers.NETHERITE, 5,5.0f, new Item.Properties().rarity(Rarity.EPIC)));
+            () -> new SwordItem(Tiers.NETHERITE, 3,5.0f, new Item.Properties().rarity(Rarity.EPIC)));
 
     public static final RegistryObject<ArmorItem> BRYAN_HELMET = ITEMS.register("bryan_helmet",
             () -> new bryanArmorItem(
@@ -333,14 +333,16 @@ public class ItemInit {
 
 
     public static final RegistryObject<Item> THE_NUG = ITEMS.register("the_nug",()
-            -> new Item(new Item.Properties().food(new FoodProperties.Builder()
-            .nutrition(5)
-            .saturationMod(1)
-            .effect(new MobEffectInstance(MobEffects.HUNGER,1,2),100f)
-            .effect(new MobEffectInstance(MobEffects.DAMAGE_BOOST,150,1),100f)
-            .effect(new MobEffectInstance(MobEffects.HERO_OF_THE_VILLAGE,150,1),100f)
-            .alwaysEat()
-            .build())));
+            -> new Item(new Item.Properties()));
+
+
+    public static final RegistryObject<Item> DOOBSKUM = ITEMS.register("doobscum",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder()
+                    .effect(new MobEffectInstance(MobEffects.CONFUSION, 1 , 300), 100f)
+
+                    .build())));
+
+
 
             
     public static final RegistryObject<Item> EVAN_PICK = ITEMS.register("evan_pick", ()
