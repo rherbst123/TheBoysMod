@@ -9,6 +9,7 @@ import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
+
 @Mod.EventBusSubscriber(modid = TheBoysMod.MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class ClientModEvents {
     @SubscribeEvent
@@ -17,7 +18,7 @@ public class ClientModEvents {
     }
 
     public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
-        event.registerLayerDefinition(CarterMobModel.LAYER_LOCATION, CarterMobModel::createBodyLayer);
+        event.registerLayerDefinition(dev.riley.theboysmod.client.model.CarterMobModel.LAYER_LOCATION, dev.riley.theboysmod.client.model.CarterMobModel::createBodyLayer);
 
     }
 }
