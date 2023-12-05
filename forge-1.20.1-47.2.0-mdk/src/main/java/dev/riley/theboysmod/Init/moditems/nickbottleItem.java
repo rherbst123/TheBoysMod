@@ -22,17 +22,18 @@ import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.EntityHitResult;
 
-public class nickbottleItem extends Item {
+public class nickbottleItem extends SnowballItem {
 
-    public nickbottleItem(Item.Properties properties) {
-        super(properties);
+    public nickbottleItem(Properties p_43140_) {
+        super(p_43140_);
     }
+}
 
     // Add code to make the item do damage
 
 
 
-}
+
 
 
 
