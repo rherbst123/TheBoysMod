@@ -3,6 +3,7 @@ package dev.riley.theboysmod.events;
 
 import dev.riley.theboysmod.Init.EntityInit;
 import dev.riley.theboysmod.TheBoysMod;
+import dev.riley.theboysmod.client.model.CarterMobModel;
 import dev.riley.theboysmod.client.renderer.CarterMobRenderer;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
@@ -18,7 +19,8 @@ public class ClientModEvents {
     }
 
     public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
-        event.registerLayerDefinition(dev.riley.theboysmod.client.model.CarterMobModel.LAYER_LOCATION, dev.riley.theboysmod.client.model.CarterMobModel::createBodyLayer);
+        event.registerLayerDefinition(CarterMobModel.LAYER_LOCATION,
+                CarterMobModel::createBodyLayer);
 
     }
 }
