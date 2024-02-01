@@ -94,6 +94,10 @@
   "block.theboysmod.boys_ore": "Boys Ore",
   "block.theboysmod.deepslate_boys_ore": "Deepslate Boys Ore",
 
+
+  "item.theboysmod.example_spawn_egg": "Example Entity",
+  "entity.theboysmod.example_entity": "Exampple Entity",
+
   "itemGroup.the_boys_tab": "The Boys Mod"
 
 
