@@ -1,7 +1,10 @@
 package dev.riley.theboysmod;
 
 
-import dev.riley.theboysmod.Init.*;
+import dev.riley.theboysmod.Init.BlockInit;
+import dev.riley.theboysmod.Init.CreativeTabInit;
+import dev.riley.theboysmod.Init.ItemInit;
+import dev.riley.theboysmod.Init.SoundInit;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.eventbus.EventBus;
@@ -25,8 +28,7 @@ public class TheBoysMod {
         ItemInit.ITEMS.register(bus);
         BlockInit.BLOCKS.register(bus);
         CreativeTabInit.TABS.register(bus);
-        SoundInit.SOUND_EVENTS.register(bus);
-        EntityInit.ENTITIES.register(bus);
+        SoundInit.register(bus);
 
     }
 
