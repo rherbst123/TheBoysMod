@@ -1,19 +1,15 @@
 package dev.riley.theboysmod.client.renderer;
 
 import dev.riley.theboysmod.TheBoysMod;
-import dev.riley.theboysmod.client.model.CarterMobModel;
 import dev.riley.theboysmod.entity.CarterMob;
+import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.entity.HumanoidMobRenderer;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.renderer.entity.MobRenderer;
-import net.minecraft.client.model.HumanoidModel;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.entity.Entity;
 
-
-
-
-public class CarterMobRenderer extends MobRenderer<CarterMob, CarterMobModel<CarterMob>> {
+public class CarterMobRenderer extends HumanoidMobRenderer<CarterMob, CarterMobModel<CarterMob>> {
 
     public static final ResourceLocation TEXTURE = new ResourceLocation(TheBoysMod.MODID, "textures/entity/carter_mob.png");
 
@@ -24,6 +20,6 @@ public class CarterMobRenderer extends MobRenderer<CarterMob, CarterMobModel<Car
 
     @Override
     public ResourceLocation getTextureLocation(CarterMob carter) {
-        return TEXTURE;
+        return null;
     }
 }
