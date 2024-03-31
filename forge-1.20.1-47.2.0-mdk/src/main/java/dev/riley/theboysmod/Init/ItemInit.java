@@ -476,7 +476,7 @@ public class ItemInit {
 
 
     public static final RegistryObject<ForgeSpawnEggItem> EXAMPLE_SPAWN_EGG = ITEMS.register("example_spawn_egg",
-            () -> new ForgeSpawnEggItem(EntityInit.EXAMPLE_ENTITY, 0xF0ABD1, 0xAE4C82, new Item.Properties()));
+            () -> new ForgeSpawnEggItem(EntityInit.EXAMPLE_ENTITY, 0xD63A19, 0xBC601A, new Item.Properties()));
 
 
 

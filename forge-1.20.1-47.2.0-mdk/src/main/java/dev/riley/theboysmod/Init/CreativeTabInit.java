@@ -138,6 +138,9 @@ public class CreativeTabInit {
                         output.accept(ItemInit.BRYAN_BOOTS.get());
                         output.accept(ItemInit.NICK_BOOTS.get());
 
+                        //Eggs
+                        output.accept(ItemInit.EXAMPLE_SPAWN_EGG.get());
+
 
 
 
