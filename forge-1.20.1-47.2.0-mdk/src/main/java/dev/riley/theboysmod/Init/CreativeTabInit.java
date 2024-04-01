@@ -140,6 +140,7 @@ public class CreativeTabInit {
 
                         //Eggs
                         output.accept(ItemInit.EXAMPLE_SPAWN_EGG.get());
+                        output.accept(ItemInit.RILEY_SPAWN_EGG.get());
 
 
 

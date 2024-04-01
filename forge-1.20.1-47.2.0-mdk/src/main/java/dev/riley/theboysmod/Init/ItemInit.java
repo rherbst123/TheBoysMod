@@ -479,7 +479,7 @@ public class ItemInit {
             () -> new ForgeSpawnEggItem(EntityInit.EXAMPLE_ENTITY, 0xD63A19, 0xBC601A, new Item.Properties()));
 
     public static final RegistryObject<ForgeSpawnEggItem> RILEY_SPAWN_EGG = (ITEMS.register("riley_spawn_egg",
-            () -> new ForgeSpawnEggItem(EntityInit.RILEY_ENTITY, 0x92DA9D, 0x4C8E6C, new Item.Properties())));
+            () -> new ForgeSpawnEggItem(EntityInit.RILEY_ENTITY, 0x1252DD, 0x8CA6DD, new Item.Properties())));
 
 
 

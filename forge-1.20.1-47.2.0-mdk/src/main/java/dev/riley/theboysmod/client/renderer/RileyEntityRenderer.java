@@ -11,7 +11,7 @@ import net.minecraft.resources.ResourceLocation;
 
 public class RileyEntityRenderer extends MobRenderer<RileyEntity, RileyEntityModel<RileyEntity>> {
     private static final ResourceLocation TEXTURE =
-            new ResourceLocation(TheBoysMod.MODID, "textures/entity/riley_entity.png");
+            new ResourceLocation(TheBoysMod.MODID, "main/resources/textures/entity/riley_entity.png");
 
     public RileyEntityRenderer(EntityRendererProvider.Context ctx) {
         super(ctx, new RileyEntityModel<>(ctx.bakeLayer(RileyEntityModel.LAYER_LOCATION)), 1.0f);
