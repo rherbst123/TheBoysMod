@@ -96,7 +96,12 @@
 
 
   "item.theboysmod.example_spawn_egg": "Example Entity",
-  "entity.theboysmod.example_entity": "Exampple Entity",
+  "entity.theboysmod.example_entity": "Example Entity",
+
+  "item.theboysmod.riley_spawn_egg": "Riley Spawn EGG",
+  "entity.theboysmod.riley_entity": "Riley",
+
+
 
   "item.theboysmod.carter_spawn_egg": "Carter Entity",
   "entity.theboysmod.carter_entity": "Carter Entity",
