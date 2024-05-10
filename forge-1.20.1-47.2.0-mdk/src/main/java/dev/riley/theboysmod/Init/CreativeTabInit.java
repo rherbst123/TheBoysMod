@@ -53,7 +53,7 @@ public class CreativeTabInit {
                         output.accept(ItemInit.ZYN.get());
                         output.accept(ItemInit.THE_SKIN.get());
                         output.accept(ItemInit.EVAN_PICK.get());
-                        output.accept(ItemInit.CARTER_SONG.get());
+                       // output.accept(ItemInit.CARTER_SONG.get());
 
                         output.accept(ItemInit.THE_PEN.get());
                         output.accept(ItemInit.BODY_PILLOW.get());
@@ -137,6 +137,10 @@ public class CreativeTabInit {
                         output.accept(ItemInit.EVAN_BOOTS.get());
                         output.accept(ItemInit.BRYAN_BOOTS.get());
                         output.accept(ItemInit.NICK_BOOTS.get());
+
+                        //Eggs
+                        output.accept(ItemInit.EXAMPLE_SPAWN_EGG.get());
+                        output.accept(ItemInit.CARTER_SPAWN_EGG.get());
 
 
 

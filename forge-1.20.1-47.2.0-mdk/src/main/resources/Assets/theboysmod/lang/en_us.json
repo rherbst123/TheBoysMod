@@ -98,6 +98,9 @@
   "item.theboysmod.example_spawn_egg": "Example Entity",
   "entity.theboysmod.example_entity": "Exampple Entity",
 
+  "item.theboysmod.carter_spawn_egg": "Carter Entity",
+  "entity.theboysmod.carter_entity": "Carter Entity",
+
   "itemGroup.the_boys_tab": "The Boys Mod"
 
 

@@ -64,10 +64,7 @@ public class ItemInit {
                     ArmorItem.Type.BOOTS,
                     new Item.Properties()));
 
-    public static final RegistryObject<RecordItem> CARTER_SONG = ITEMS.register("carter_song",
-            () -> new RecordItem
-                    (1, SoundEvents.MUSIC_DISC_5,
-                            (new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON)),8000));
+
 
 
     //Riley's Items
@@ -477,6 +474,9 @@ public class ItemInit {
 
     public static final RegistryObject<ForgeSpawnEggItem> EXAMPLE_SPAWN_EGG = ITEMS.register("example_spawn_egg",
             () -> new ForgeSpawnEggItem(EntityInit.EXAMPLE_ENTITY, 0xF0ABD1, 0xAE4C82, new Item.Properties()));
+
+    public static final RegistryObject<ForgeSpawnEggItem> CARTER_SPAWN_EGG = ITEMS.register("carter_spawn_egg",
+            () -> new ForgeSpawnEggItem(EntityInit.CARTER_ENTITY, 0x699440, 0xA2EA5F, new Item.Properties()));
 
 
 
