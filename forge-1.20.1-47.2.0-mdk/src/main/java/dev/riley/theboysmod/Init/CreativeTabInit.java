@@ -142,6 +142,8 @@ public class CreativeTabInit {
                         output.accept(ItemInit.EXAMPLE_SPAWN_EGG.get());
                         output.accept(ItemInit.CARTER_SPAWN_EGG.get());
                         output.accept(ItemInit.RILEY_SPAWN_EGG.get());
+                        output.accept(ItemInit.ANIMATED_SPAWN_EGG.get());
+
 
 
 

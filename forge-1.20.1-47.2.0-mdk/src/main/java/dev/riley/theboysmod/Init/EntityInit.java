@@ -1,6 +1,7 @@
 package dev.riley.theboysmod.Init;
 
 import dev.riley.theboysmod.TheBoysMod;
+import dev.riley.theboysmod.entity.AnimatedEntity;
 import dev.riley.theboysmod.entity.CarterEntity;
 import dev.riley.theboysmod.entity.ExampleEntity;
 import dev.riley.theboysmod.entity.RileyEntity;
@@ -29,12 +30,15 @@ public class EntityInit {
     );
 
 
-
-
     public static final RegistryObject<EntityType<RileyEntity>> RILEY_ENTITY = ENTITIES.register("riley_entity",
             () -> EntityType.Builder.<RileyEntity>of(RileyEntity::new, MobCategory.CREATURE)
                     .sized(0.25f, 0.25f)
                     .build(new ResourceLocation(TheBoysMod.MODID, "riley_entity").toString())
+    );
+    public static final RegistryObject<EntityType<AnimatedEntity>> ANIMATED_ENTITY = ENTITIES.register("animated_entity",
+            () -> EntityType.Builder.<AnimatedEntity>of(AnimatedEntity::new, MobCategory.CREATURE)
+                    .sized(1.0f, 1.0f)
+                    .build(new ResourceLocation(TheBoysMod.MODID, "animated_entity").toString())
     );
 }
 

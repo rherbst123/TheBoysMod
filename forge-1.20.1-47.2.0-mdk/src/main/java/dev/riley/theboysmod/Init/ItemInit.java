@@ -481,6 +481,9 @@ public class ItemInit {
     public static final RegistryObject<ForgeSpawnEggItem> CARTER_SPAWN_EGG = ITEMS.register("carter_spawn_egg",
             () -> new ForgeSpawnEggItem(EntityInit.CARTER_ENTITY, 0x699440, 0xA2EA5F, new Item.Properties()));
 
+    public static final RegistryObject<ForgeSpawnEggItem> ANIMATED_SPAWN_EGG = ITEMS.register("animated_spawn_egg",
+            () -> new ForgeSpawnEggItem(EntityInit.ANIMATED_ENTITY, 0x699440, 0xA2EA5F, new Item.Properties()));
+
 
 
 
