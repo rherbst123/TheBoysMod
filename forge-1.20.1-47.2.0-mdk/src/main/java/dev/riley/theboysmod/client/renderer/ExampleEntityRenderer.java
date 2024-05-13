@@ -11,7 +11,7 @@ import net.minecraft.resources.ResourceLocation;
 
 public class ExampleEntityRenderer extends MobRenderer<ExampleEntity, ExampleEntityModel<ExampleEntity>> {
     private static final ResourceLocation TEXTURE =
-            new ResourceLocation(TheBoysMod.MODID, "resources/textures/entity/example_entity.png");
+            new ResourceLocation(TheBoysMod.MODID, "textures/entities/example_entity.png");
 
     public ExampleEntityRenderer(EntityRendererProvider.Context ctx) {
         super(ctx, new ExampleEntityModel<>(ctx.bakeLayer(ExampleEntityModel.LAYER_LOCATION)), 1.0f);

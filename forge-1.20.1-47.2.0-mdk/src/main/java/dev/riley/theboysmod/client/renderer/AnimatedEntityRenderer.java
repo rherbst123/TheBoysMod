@@ -10,7 +10,7 @@ import org.jetbrains.annotations.NotNull;
 
 public class AnimatedEntityRenderer extends MobRenderer<AnimatedEntity, AnimatedEntityModel> {
     public static final ResourceLocation TEXTURE
-            = new ResourceLocation(TheBoysMod.MODID, "textures/entity/animated_entity.png");
+            = new ResourceLocation(TheBoysMod.MODID, "textures/entities/animated_entity.png");
 
     public AnimatedEntityRenderer(EntityRendererProvider.Context ctx) {
         super(ctx, new AnimatedEntityModel(ctx.bakeLayer(AnimatedEntityModel.LAYER_LOCATION)), 0.25F);
