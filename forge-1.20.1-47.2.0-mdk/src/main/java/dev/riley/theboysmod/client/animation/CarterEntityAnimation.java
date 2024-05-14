@@ -5,7 +5,7 @@ import net.minecraft.client.animation.AnimationDefinition;
 import net.minecraft.client.animation.Keyframe;
 import net.minecraft.client.animation.KeyframeAnimations;
 
-public class CarterEntityAnimation {
+public final class CarterEntityAnimation {
     public static final AnimationDefinition IDLE = AnimationDefinition.Builder.withLength(2f).looping()
             .addAnimation("head",
                     new AnimationChannel(AnimationChannel.Targets.POSITION,
