@@ -9,12 +9,12 @@ import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.resources.ResourceLocation;
 
-public class RileyEntityRenderer extends MobRenderer<RileyEntity, RileyEntityModel<RileyEntity>> {
+public class RileyEntityRenderer extends MobRenderer<RileyEntity, RileyEntityModel> {
     private static final ResourceLocation TEXTURE =
             new ResourceLocation(TheBoysMod.MODID, "textures/entities/riley_entity.png");
 
     public RileyEntityRenderer(EntityRendererProvider.Context ctx) {
-        super(ctx, new RileyEntityModel<>(ctx.bakeLayer(RileyEntityModel.LAYER_LOCATION)), 1.0f);
+        super(ctx, new RileyEntityModel(ctx.bakeLayer(RileyEntityModel.LAYER_LOCATION)), 1.0f);
     }
 
     @Override

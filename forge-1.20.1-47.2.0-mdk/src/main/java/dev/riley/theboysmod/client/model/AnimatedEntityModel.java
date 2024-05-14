@@ -74,5 +74,5 @@ public class AnimatedEntityModel extends HierarchicalModel<AnimatedEntity> {
         return this.parts.body();
     }
 
-    private record ModelParts(ModelPart body, ModelPart head) {}
+    record ModelParts(ModelPart body, ModelPart head) {}
 }
