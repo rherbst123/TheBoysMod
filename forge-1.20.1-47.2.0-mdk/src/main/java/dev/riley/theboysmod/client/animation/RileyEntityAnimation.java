@@ -5,7 +5,7 @@ import net.minecraft.client.animation.AnimationDefinition;
 import net.minecraft.client.animation.Keyframe;
 import net.minecraft.client.animation.KeyframeAnimations;
 
-public class RileyEntityAnimation {
+public final class RileyEntityAnimation {
 
     public static final AnimationDefinition WALKING = AnimationDefinition.Builder.withLength(0.75f).looping()
             .addAnimation("RightLeg",

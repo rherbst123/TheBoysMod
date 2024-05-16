@@ -37,7 +37,7 @@ public class ClientModEvents {
     public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
         event.registerLayerDefinition(ExampleEntityModel.LAYER_LOCATION, ExampleEntityModel::createBodyLayer);
         event.registerLayerDefinition(RileyEntityModel.LAYER_LOCATION, RileyEntityModel::createBodyLayer);
-        event.registerLayerDefinition(CarterEntityModel.LAYER_LOCATION, RileyEntityModel::createBodyLayer);
+        event.registerLayerDefinition(CarterEntityModel.LAYER_LOCATION, CarterEntityModel::createBodyLayer);
         event.registerLayerDefinition(AnimatedEntity.LAYER_LOCATION, AnimatedEntityModel::createBodyLayer);
     }
 }

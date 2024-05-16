@@ -1,20 +1,15 @@
+package dev.riley.theboysmod.client.model;
 
 
 
 import dev.riley.theboysmod.TheBoysMod;
+import dev.riley.theboysmod.client.animation.RileyEntityAnimation;
 import dev.riley.theboysmod.entity.RileyEntity;
-import net.minecraft.client.model.EntityModel;
 import net.minecraft.client.model.geom.ModelPart;
-import net.minecraft.world.entity.Entity;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import dev.riley.theboysmod.TheBoysMod;
-import dev.riley.theboysmod.client.animation.AnimatedEntityAnimation;
-import dev.riley.theboysmod.entity.AnimatedEntity;
-import net.minecraft.client.model.EntityModel;
 import net.minecraft.client.model.HierarchicalModel;
 import net.minecraft.client.model.geom.ModelLayerLocation;
-import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.geom.PartPose;
 import net.minecraft.client.model.geom.builders.*;
 import net.minecraft.resources.ResourceLocation;
@@ -23,6 +18,11 @@ import org.jetbrains.annotations.NotNull;
 public class RileyEntityModel extends HierarchicalModel<RileyEntity> {
 	// This layer location should be baked with EntityRendererProvider.Context in the entity renderer and passed into this model's constructor
 	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation(TheBoysMod.MODID, "riley_entity"), "main");
+
+
+	private final AnimatedEntityModel.ModelParts parts;
+
+
 	private final ModelPart Head;
 	private final ModelPart Body;
 	private final ModelPart RightArm;
@@ -31,12 +31,15 @@ public class RileyEntityModel extends HierarchicalModel<RileyEntity> {
 	private final ModelPart LeftLeg;
 
 	public RileyEntityModel(ModelPart root) {
-		this.Head = root.getChild("Head");
+
+        this.Head = root.getChild("Head");
 		this.Body = root.getChild("Body");
 		this.RightArm = root.getChild("RightArm");
 		this.LeftArm = root.getChild("LeftArm");
 		this.RightLeg = root.getChild("RightLeg");
 		this.LeftLeg = root.getChild("LeftLeg");
+
+		this.parts = new AnimatedEntityModel.ModelParts(Body, Head);
 	}
 
 	public static LayerDefinition createBodyLayer() {
@@ -65,12 +68,21 @@ public class RileyEntityModel extends HierarchicalModel<RileyEntity> {
 	}
 
 	@Override
-	public void setupAnim(T entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
+	public void setupAnim(@NotNull RileyEntity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
+		root().getAllParts().forEach(ModelPart::resetPose);
+		animate(entity.idleAnimationState, RileyEntityAnimation.IDLE, ageInTicks);
+		// animate(entity.attackAnimationState, ExampleAnimatedEntityAnimation.ATTACK, ageInTicks);
+		// etc...
 
+		if(!entity.isInWaterOrBubble()) {
+			animateWalk(RileyEntityAnimation.WALKING, limbSwing, limbSwingAmount, 1.0F, 2.5F);
+		} else {
+			// TODO: Swim animation
+		}
 	}
 
 	@Override
-	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
+	public void renderToBuffer(@NotNull PoseStack poseStack, @NotNull VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
 		Head.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 		Body.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 		RightArm.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
@@ -84,8 +96,7 @@ public class RileyEntityModel extends HierarchicalModel<RileyEntity> {
 		return this.parts.body();
 	}
 
-	@Override
-	public void setupAnim(RileyEntity p_102618_, float p_102619_, float p_102620_, float p_102621_, float p_102622_, float p_102623_) {
-
+	record ModelParts(ModelPart body, ModelPart head) {}
 	}
-}
+
+
