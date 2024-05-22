@@ -1,10 +1,7 @@
 package dev.riley.theboysmod.Init;
 
 import dev.riley.theboysmod.TheBoysMod;
-import dev.riley.theboysmod.entity.AnimatedEntity;
-import dev.riley.theboysmod.entity.CarterEntity;
-import dev.riley.theboysmod.entity.ExampleEntity;
-import dev.riley.theboysmod.entity.RileyEntity;
+import dev.riley.theboysmod.entity.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
@@ -38,8 +35,20 @@ public class EntityInit {
 
     public static final RegistryObject<EntityType<RileyEntity>> RILEY_ENTITY = ENTITIES.register("riley_entity",
             () -> EntityType.Builder.<RileyEntity>of(RileyEntity::new, MobCategory.CREATURE)
-                    .sized(0.25f, 0.25f)
+                    .sized(1.0f, 1.0f)
                     .build(new ResourceLocation(TheBoysMod.MODID, "riley_entity").toString())
+    );
+
+    public static final RegistryObject<EntityType<AustinEntity>> AUSTIN_ENTITY = ENTITIES.register("austin_entity",
+            () -> EntityType.Builder.<AustinEntity>of(AustinEntity::new, MobCategory.CREATURE)
+                    .sized(1.0f, 1.0f)
+                    .build(new ResourceLocation(TheBoysMod.MODID, "austin_entity").toString())
+    );
+
+    public static final RegistryObject<EntityType<BryanEntity>> BRYAN_ENTITY = ENTITIES.register("bryan_entity",
+            () -> EntityType.Builder.<BryanEntity>of(BryanEntity::new, MobCategory.CREATURE)
+                    .sized(1.0f, 1.0f)
+                    .build(new ResourceLocation(TheBoysMod.MODID, "bryan_entity").toString())
     );
 
 

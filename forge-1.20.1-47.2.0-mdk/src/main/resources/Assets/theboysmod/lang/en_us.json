@@ -98,18 +98,21 @@
   "item.theboysmod.example_spawn_egg": "Example Entity",
   "entity.theboysmod.example_entity": "Example Entity",
 
-  "item.theboysmod.riley_spawn_egg": "Riley Spawn EGG",
+  "item.theboysmod.riley_spawn_egg": "Riley's Egg",
   "entity.theboysmod.riley_entity": "Riley",
 
   "item.theboysmod.animated_spawn_egg": "TESTEGG",
   "entity.theboysmod.animated_entity": "TEST",
 
 
-
-
-
-  "item.theboysmod.carter_spawn_egg": "Carter Entity",
+  "item.theboysmod.carter_spawn_egg": "Carter's Egg",
   "entity.theboysmod.carter_entity": "Carter Entity",
+
+  "item.theboysmod.austin_spawn_egg": "Austin's Egg",
+  "entity.theboysmod.austin_entity": "Austin Entity",
+
+  "item.theboysmod.bryan_spawn_egg": "Bryan's Egg",
+  "entity.theboysmod.bryan_entity": "Bryan Entity",
 
   "itemGroup.the_boys_tab": "The Boys Mod"
 
