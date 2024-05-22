@@ -8,7 +8,7 @@ import net.minecraft.client.animation.KeyframeAnimations;
 public final class RileyEntityAnimation {
 
     public static final AnimationDefinition WALKING = AnimationDefinition.Builder.withLength(0.75f).looping()
-            .addAnimation("RightLeg",
+            .addAnimation("rightLeg",
                     new AnimationChannel(AnimationChannel.Targets.ROTATION,
                             new Keyframe(0f, KeyframeAnimations.degreeVec(10f, 0f, 0f),
                                     AnimationChannel.Interpolations.LINEAR),
@@ -30,7 +30,7 @@ public final class RileyEntityAnimation {
                                     AnimationChannel.Interpolations.LINEAR),
                             new Keyframe(0.75f, KeyframeAnimations.degreeVec(2.5f, 0f, 0f),
                                     AnimationChannel.Interpolations.LINEAR)))
-            .addAnimation("LeftLeg",
+            .addAnimation("leftLeg",
                     new AnimationChannel(AnimationChannel.Targets.ROTATION,
                             new Keyframe(0f, KeyframeAnimations.degreeVec(-20f, 0f, 0f),
                                     AnimationChannel.Interpolations.LINEAR),

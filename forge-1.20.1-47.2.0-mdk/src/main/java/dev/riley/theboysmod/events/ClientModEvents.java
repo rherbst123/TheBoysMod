@@ -5,18 +5,16 @@ import dev.riley.theboysmod.TheBoysMod;
 import dev.riley.theboysmod.client.model.AnimatedEntityModel;
 import dev.riley.theboysmod.client.model.CarterEntityModel;
 import dev.riley.theboysmod.client.model.ExampleEntityModel;
-import dev.riley.theboysmod.client.renderer.CarterEntityRenderer;
 import dev.riley.theboysmod.client.model.RileyEntityModel;
 import dev.riley.theboysmod.client.renderer.ExampleEntityRenderer;
 import dev.riley.theboysmod.client.renderer.RileyEntityRenderer;
+import dev.riley.theboysmod.client.renderer.CarterEntityRenderer;
 import dev.riley.theboysmod.entity.AnimatedEntity;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import dev.riley.theboysmod.client.renderer.AnimatedEntityRenderer;
-
-import javax.swing.text.html.parser.Entity;
 
 @Mod.EventBusSubscriber(modid = TheBoysMod.MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class ClientModEvents {

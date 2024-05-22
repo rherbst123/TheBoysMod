@@ -25,7 +25,7 @@ public class TheBoysMod {
         ItemInit.ITEMS.register(bus);
         BlockInit.BLOCKS.register(bus);
         CreativeTabInit.TABS.register(bus);
-        SoundInit.register(bus);
+        SoundInit.SOUND_EVENTS.register(bus);
         EntityInit.ENTITIES.register(bus);
 
     }

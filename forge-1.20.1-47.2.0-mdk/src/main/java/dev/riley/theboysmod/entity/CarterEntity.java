@@ -20,15 +20,13 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.ServerLevelAccessor;
+import net.minecraftforge.common.ForgeMod;
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
+
+import javax.annotation.Nullable;
 
 public class CarterEntity extends Animal {
     public final AnimationState idleAnimationState = new AnimationState();
-
-
-
-
 
     public CarterEntity(EntityType<? extends Animal> type, Level level) {
         super(type, level);
@@ -39,14 +37,16 @@ public class CarterEntity extends Animal {
         setPos(x, y, z);
     }
 
-    public CarterEntity(Level level, BlockPos position) {
-        this(level, position.getX(), position.getY(), position.getZ());
+    public CarterEntity(Level level, BlockPos pos) {
+        this(level, pos.getX() + 0.5, pos.getY(), pos.getZ() + 0.5);
     }
 
     @Nullable
     @Override
-    public AgeableMob getBreedOffspring(ServerLevel level, AgeableMob otherParent) {
-        return new CarterEntity(level, this.blockPosition());
+    public AgeableMob getBreedOffspring(@NotNull ServerLevel level, @NotNull AgeableMob otherParent) {
+        CarterEntity entity = new CarterEntity(level, getX(), getY(), getZ());
+        entity.finalizeSpawn(level, level.getCurrentDifficultyAt(entity.blockPosition()), MobSpawnType.BREEDING, null, null);
+        return entity;
     }
 
     @Override
@@ -58,14 +58,25 @@ public class CarterEntity extends Animal {
         this.goalSelector.addGoal(6, new WaterAvoidingRandomStrollGoal(this, 1.0D));
         this.goalSelector.addGoal(7, new LookAtPlayerGoal(this, Player.class, 6.0F));
         this.goalSelector.addGoal(8, new RandomLookAroundGoal(this));
-        this.goalSelector.addGoal(9, new TemptGoal(this, 1.0D, Ingredient.of(ItemInit.BOYS_INGOT.get()), false));
+    }
+
+    @Override
+    public void tick() {
+        if (level().isClientSide()) {
+            this.idleAnimationState.animateWhen(!isInWaterOrBubble() && !this.walkAnimation.isMoving(), this.tickCount);
+        }
+
+        super.tick();
     }
 
     public static AttributeSupplier.Builder createAttributes() {
-        return Pig.createAttributes();
+        return Mob.createMobAttributes()
+                .add(Attributes.MAX_HEALTH, 10.0D)
+                .add(Attributes.MOVEMENT_SPEED, 0.25D)
+                .add(ForgeMod.STEP_HEIGHT_ADDITION.get(), 1.0D);
     }
 
-    public static boolean canSpawn(EntityType<CarterEntity> entityType, LevelAccessor level, MobSpawnType spawnType, BlockPos position, RandomSource random) {
-        return Animal.checkAnimalSpawnRules(entityType, level, spawnType, position, random);
+    public static boolean canSpawn(EntityType<CarterEntity> tEntityType, ServerLevelAccessor serverLevelAccessor, MobSpawnType spawnType, BlockPos blockPos, RandomSource randomSource) {
+        return Animal.checkAnimalSpawnRules(tEntityType, serverLevelAccessor, spawnType, blockPos, randomSource) && !serverLevelAccessor.getLevelData().isRaining();
     }
 }

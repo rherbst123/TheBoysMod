@@ -23,6 +23,12 @@ public class EntityInit {
                     .build(new ResourceLocation(TheBoysMod.MODID, "example_entity").toString())
     );
 
+    public static final RegistryObject<EntityType<AnimatedEntity>> ANIMATED_ENTITY = ENTITIES.register("animated_entity",
+            () -> EntityType.Builder.<AnimatedEntity>of(AnimatedEntity::new, MobCategory.CREATURE)
+                    .sized(1.0f, 1.0f)
+                    .build(new ResourceLocation(TheBoysMod.MODID, "animated_entity").toString())
+    );
+
     public static final RegistryObject<EntityType<CarterEntity>> CARTER_ENTITY = ENTITIES.register("carter_entity",
             () -> EntityType.Builder.<CarterEntity>of(CarterEntity::new, MobCategory.CREATURE)
                     .sized(1.0f, 1.0f)
@@ -35,11 +41,11 @@ public class EntityInit {
                     .sized(0.25f, 0.25f)
                     .build(new ResourceLocation(TheBoysMod.MODID, "riley_entity").toString())
     );
-    public static final RegistryObject<EntityType<AnimatedEntity>> ANIMATED_ENTITY = ENTITIES.register("animated_entity",
-            () -> EntityType.Builder.<AnimatedEntity>of(AnimatedEntity::new, MobCategory.CREATURE)
-                    .sized(1.0f, 1.0f)
-                    .build(new ResourceLocation(TheBoysMod.MODID, "animated_entity").toString())
-    );
+
+
+
+
+
 }
 
 
