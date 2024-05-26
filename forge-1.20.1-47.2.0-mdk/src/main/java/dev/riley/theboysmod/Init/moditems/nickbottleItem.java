@@ -24,16 +24,28 @@ import net.minecraft.world.phys.EntityHitResult;
 
 public class nickbottleItem extends SnowballItem {
 
-    public nickbottleItem(Properties p_43140_) {
-        super(p_43140_);
+public nickbottleItem(Properties properties) {
+        super(properties);
+    }
+
+    public InteractionResult useOn(UseOnContext p_41204_) {
+        Level level = p_41204_.getLevel();
+        Player player = p_41204_.getPlayer();
+        InteractionHand hand = p_41204_.getHand();
+        ItemStack itemstack = player.getItemInHand(hand);
+        if (!level.isClientSide) {
+            Snowball snowball = new Snowball(level, player);
+            snowball.setItem(itemstack);
+            snowball.shootFromRotation(player, player.getXRot(), player.getYRot(), 0.0F, 1.5F, 1.0F);
+            level.addFreshEntity(snowball);
+        }
+
+        level.playSound((Player)null, player.getX(), player.getY(), player.getZ(), SoundEvents.SNOWBALL_THROW, SoundSource.PLAYERS, 1.0F, 1.0F);
+        player.awardStat(Stats.ITEM_USED.get(this));
+        if (!player.getAbilities().instabuild) {
+            itemstack.shrink(1);
+        }
+
+        return InteractionResult.sidedSuccess(level.isClientSide);
     }
 }
-
-    // Add code to make the item do damage
-
-
-
-
-
-
-
