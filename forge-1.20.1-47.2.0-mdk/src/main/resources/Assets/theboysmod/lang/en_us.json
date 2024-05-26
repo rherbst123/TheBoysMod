@@ -104,7 +104,6 @@
   "item.theboysmod.animated_spawn_egg": "TESTEGG",
   "entity.theboysmod.animated_entity": "TEST",
 
-
   "item.theboysmod.carter_spawn_egg": "Carter's Egg",
   "entity.theboysmod.carter_entity": "Carter Entity",
 
@@ -113,6 +112,18 @@
 
   "item.theboysmod.bryan_spawn_egg": "Bryan's Egg",
   "entity.theboysmod.bryan_entity": "Bryan Entity",
+
+  "item.theboysmod.jacob_spawn_egg": "Jacob's Egg",
+  "entity.theboysmod.jacob_entity": "Jacob Entity",
+
+    "item.theboysmod.jake_spawn_egg": "Jake's Egg",
+    "entity.theboysmod.jake_entity": "Jake Entity",
+
+    "item.theboysmod.john_spawn_egg": "John's Egg",
+    "entity.theboysmod.john_entity": "John Entity",
+
+    "item.theboysmod.evan_spawn_egg": "Evan's Egg",
+    "entity.theboysmod.evan_entity": "Evan Entity",
 
   "itemGroup.the_boys_tab": "The Boys Mod"
 

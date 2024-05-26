@@ -51,6 +51,36 @@ public class EntityInit {
                     .build(new ResourceLocation(TheBoysMod.MODID, "bryan_entity").toString())
     );
 
+    public static final RegistryObject<EntityType<JacobEntity>> JACOB_ENTITY = ENTITIES.register("jacob_entity",
+            () -> EntityType.Builder.<JacobEntity>of(JacobEntity::new, MobCategory.CREATURE)
+                    .sized(1.0f, 1.0f)
+                    .build(new ResourceLocation(TheBoysMod.MODID, "jacob_entity").toString())
+    );
+
+    public static final RegistryObject<EntityType<JakeEntity>> JAKE_ENTITY = ENTITIES.register("jake_entity",
+            () -> EntityType.Builder.<JakeEntity>of(JakeEntity::new, MobCategory.CREATURE)
+                    .sized(1.0f, 1.0f)
+                    .build(new ResourceLocation(TheBoysMod.MODID, "jake_entity").toString())
+    );
+
+    public static final RegistryObject<EntityType<JohnEntity>> JOHN_ENTITY = ENTITIES.register("john_entity",
+            () -> EntityType.Builder.<JohnEntity>of(JohnEntity::new, MobCategory.CREATURE)
+                    .sized(1.0f, 1.0f)
+                    .build(new ResourceLocation(TheBoysMod.MODID, "john_entity").toString())
+    );
+
+    public static final RegistryObject<EntityType<EvanEntity>> EVAN_ENTITY = ENTITIES.register("evan_entity",
+            () -> EntityType.Builder.<EvanEntity>of(EvanEntity::new, MobCategory.CREATURE)
+                    .sized(1.0f, 1.0f)
+                    .build(new ResourceLocation(TheBoysMod.MODID, "evan_entity").toString())
+    );
+
+    public static final RegistryObject<EntityType<NickEntity>> NICK_ENTITY = ENTITIES.register("nick_entity",
+            () -> EntityType.Builder.<NickEntity>of(NickEntity::new, MobCategory.CREATURE)
+                    .sized(1.0f, 1.0f)
+                    .build(new ResourceLocation(TheBoysMod.MODID, "nick_entity").toString())
+    );
+
 
 
 

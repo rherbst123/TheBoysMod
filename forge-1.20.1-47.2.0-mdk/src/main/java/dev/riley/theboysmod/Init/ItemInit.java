@@ -490,6 +490,21 @@ public class ItemInit {
     public static final RegistryObject<ForgeSpawnEggItem> BRYAN_SPAWN_EGG = ITEMS.register("bryan_spawn_egg",
             () -> new ForgeSpawnEggItem(EntityInit.BRYAN_ENTITY, 0xd8e30e, 0xd6db76, new Item.Properties()));
 
+    public static final RegistryObject<ForgeSpawnEggItem> JACOB_SPAWN_EGG = ITEMS.register("jacob_spawn_egg",
+            () -> new ForgeSpawnEggItem(EntityInit.JACOB_ENTITY, 0xf2faf8, 0xb4b8b7, new Item.Properties()));
+
+    public static final RegistryObject<ForgeSpawnEggItem> JAKE_SPAWN_EGG = ITEMS.register("jake_spawn_egg",
+            () -> new ForgeSpawnEggItem(EntityInit.JAKE_ENTITY, 0xe85302, 0xed864e, new Item.Properties()));
+
+    public static final RegistryObject<ForgeSpawnEggItem> JOHN_SPAWN_EGG = ITEMS.register("john_spawn_egg",
+            () -> new ForgeSpawnEggItem(EntityInit.JOHN_ENTITY, 0x0d3802, 0x337522, new Item.Properties()));
+
+    public static final RegistryObject<ForgeSpawnEggItem> EVAN_SPAWN_EGG = ITEMS.register("evan_spawn_egg",
+            () -> new ForgeSpawnEggItem(EntityInit.EVAN_ENTITY, 0xf70abc, 0xf748cc, new Item.Properties()));
+
+    public static final RegistryObject<ForgeSpawnEggItem> NICK_SPAWN_EGG = ITEMS.register("nick_spawn_egg",
+            () -> new ForgeSpawnEggItem(EntityInit.NICK_ENTITY, 0x030202, 0x2b2a2a, new Item.Properties()));
+
 
 
 

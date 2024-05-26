@@ -21,6 +21,11 @@ public class CommonModEvents {
         event.put(EntityInit.RILEY_ENTITY.get(), RileyEntity.createAttributes().build());
         event.put(EntityInit.AUSTIN_ENTITY.get(), AustinEntity.createAttributes().build());
         event.put(EntityInit.BRYAN_ENTITY.get(), BryanEntity.createAttributes().build());
+        event.put(EntityInit.JACOB_ENTITY.get(), JacobEntity.createAttributes().build());
+        event.put(EntityInit.JAKE_ENTITY.get(), JakeEntity.createAttributes().build());
+        event.put(EntityInit.JOHN_ENTITY.get(), JohnEntity.createAttributes().build());
+        event.put(EntityInit.EVAN_ENTITY.get(), EvanEntity.createAttributes().build());
+        event.put(EntityInit.NICK_ENTITY.get(), NickEntity.createAttributes().build());
 
     }
 
@@ -71,6 +76,46 @@ public class CommonModEvents {
                 SpawnPlacements.Type.ON_GROUND,
                 Heightmap.Types.WORLD_SURFACE,
                 BryanEntity::canSpawn,
+                SpawnPlacementRegisterEvent.Operation.OR
+        );
+
+        event.register(
+                EntityInit.JACOB_ENTITY.get(),
+                SpawnPlacements.Type.ON_GROUND,
+                Heightmap.Types.WORLD_SURFACE,
+                JacobEntity::canSpawn,
+                SpawnPlacementRegisterEvent.Operation.OR
+        );
+
+        event.register(
+                EntityInit.JAKE_ENTITY.get(),
+                SpawnPlacements.Type.ON_GROUND,
+                Heightmap.Types.WORLD_SURFACE,
+                JakeEntity::canSpawn,
+                SpawnPlacementRegisterEvent.Operation.OR
+        );
+
+        event.register(
+                EntityInit.JOHN_ENTITY.get(),
+                SpawnPlacements.Type.ON_GROUND,
+                Heightmap.Types.WORLD_SURFACE,
+                JohnEntity::canSpawn,
+                SpawnPlacementRegisterEvent.Operation.OR
+        );
+
+        event.register(
+                EntityInit.EVAN_ENTITY.get(),
+                SpawnPlacements.Type.ON_GROUND,
+                Heightmap.Types.WORLD_SURFACE,
+                EvanEntity::canSpawn,
+                SpawnPlacementRegisterEvent.Operation.OR
+        );
+
+        event.register(
+                EntityInit.NICK_ENTITY.get(),
+                SpawnPlacements.Type.ON_GROUND,
+                Heightmap.Types.WORLD_SURFACE,
+                NickEntity::canSpawn,
                 SpawnPlacementRegisterEvent.Operation.OR
         );
 

@@ -145,6 +145,11 @@ public class CreativeTabInit {
                         output.accept(ItemInit.RILEY_SPAWN_EGG.get());
                         output.accept(ItemInit.AUSTIN_SPAWN_EGG.get());
                         output.accept(ItemInit.BRYAN_SPAWN_EGG.get());
+                        output.accept(ItemInit.JACOB_SPAWN_EGG.get());
+                        output.accept(ItemInit.JAKE_SPAWN_EGG.get());
+                        output.accept(ItemInit.JOHN_SPAWN_EGG.get());
+                        output.accept(ItemInit.EVAN_SPAWN_EGG.get());
+                        output.accept(ItemInit.NICK_SPAWN_EGG.get());
 
 
 
