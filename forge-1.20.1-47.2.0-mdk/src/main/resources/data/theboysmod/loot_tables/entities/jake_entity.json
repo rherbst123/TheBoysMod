@@ -4,6 +4,11 @@
     {
       "rolls": 1,
       "bonus_rolls": 0,
+      "entries": []
+    },
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
       "entries": [
         {
           "type": "minecraft:item",
@@ -13,8 +18,8 @@
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
-                "min": 1,
-                "max": 3
+                "min": 0,
+                "max": 2
               },
               "add": false
             },
@@ -29,6 +34,27 @@
           ]
         }
       ]
+    },
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "theboysmod:the_pen"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:killed_by_player"
+        },
+        {
+          "condition": "minecraft:random_chance_with_looting",
+          "chance": 0.025,
+          "looting_multiplier": 0.01
+        }
+      ]
     }
-  ]
+  ],
+  "random_sequence": "theboysmod:jake_entity"
 }
